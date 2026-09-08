@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F6F1E7;
+  color: #1B1F27;
+}
+
+::selection {
+  background-color: #C6A15B;
+  color: #12151B;
+}
+
+.container-px {
+  @apply px-6 sm:px-8 lg:px-12;
+}
+
+.section-py {
+  @apply py-20 sm:py-24 lg:py-28;
+}
+
+.eyebrow {
+  @apply text-[13px] tracking-wide text-gold font-semibold;
+}
+
+.btn-gold {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-[15px] font-semibold text-charcoal transition-all duration-300 hover:bg-goldlight hover:shadow-gold active:scale-[0.98];
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-cream/30 px-7 py-3.5 text-[15px] font-semibold text-cream transition-all duration-300 hover:border-cream hover:bg-cream/10 active:scale-[0.98];
+}
+
+.btn-outline-dark {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/20 px-7 py-3.5 text-[15px] font-semibold text-ink transition-all duration-300 hover:border-ink hover:bg-ink/5 active:scale-[0.98];
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
