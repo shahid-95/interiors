@@ -120,7 +120,7 @@ export default function Navbar() {
 
           {/* CALL */}
           <a
-            href="tel:+918052050846"
+            href="tel:+919580275258"
             aria-label="Call SK POP WORKS"
             className="group flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.025] px-4 py-2.5 text-[13px] font-medium text-cream/70 transition-all duration-300 hover:border-gold/30 hover:bg-gold/5 hover:text-gold"
           >
@@ -247,7 +247,7 @@ export default function Navbar() {
 
               {/* CALL */}
               <a
-                href="tel:+918052050846"
+                href="tel:+919580275258"
                 onClick={closeMenu}
                 className="flex min-h-[64px] w-full items-center gap-3 rounded-xl border border-white/10 bg-white/[0.035] px-4 transition-all duration-200 hover:border-gold/30 hover:bg-gold/5"
               >
