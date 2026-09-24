@@ -165,7 +165,7 @@ export default function CTA() {
 
             {/* Call */}
             <a
-              href="tel:+918052050846"
+              href="tel:+919580275258"
               className="
                 group
                 inline-flex
