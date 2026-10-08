@@ -88,7 +88,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.08 }}
             className="mt-5 max-w-3xl font-display text-[2.45rem] font-medium leading-[0.98] tracking-[-0.035em] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.3)] sm:mt-6 sm:text-5xl lg:text-6xl xl:text-[4.25rem]"
-          >S K - POP, Gypsum,PVC Works & All Types of False Ceiling works.
+          >S K - POP, Gypsum,PVC Works & All     Types of False Ceiling works.
+
             Elevate Your Space With{" "}
             <span className="relative inline-block italic text-goldlight">
               Premium
