@@ -2,13 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Phone,
-  MessageCircle,
-  ChevronDown,
-  Check,
-} from "lucide-react";
+import { ArrowRight, ChevronDown, Check } from "lucide-react";
 
 const trustIndicators = [
   "Quality Materials",
@@ -24,7 +18,7 @@ const services = [
   "PARTITION",
   "FLUTED PANEL",
   "VOX PANEL",
-  "ALL TYPE OF FALSE CEILING WORKS",
+  "FALSE CEILING WORKS",
 ];
 
 export default function Hero() {
@@ -57,7 +51,6 @@ export default function Hero() {
 
       {/* ================= CONTENT ================= */}
       <div className="container-px relative z-10 mx-auto w-full max-w-content py-14 sm:py-18 lg:py-22">
-
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -82,14 +75,23 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* ================= HEADING ================= */}
+          {/* ================= BUSINESS NAME ================= */}
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.05 }}
+            className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-goldlight sm:mt-6 sm:text-sm"
+          >
+            S K - POP, Gypsum,PVC Works & All Types of False Ceiling works
+          </motion.p>
+
+          {/* ================= MAIN HEADING ================= */}
           <motion.h1
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.08 }}
-            className="mt-5 max-w-3xl font-display text-[2.45rem] font-medium leading-[0.98] tracking-[-0.035em] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.3)] sm:mt-6 sm:text-5xl lg:text-6xl xl:text-[4.25rem]"
-          >S K - POP, Gypsum,PVC Works & All     Types of False Ceiling works.
-
+            className="mt-3 max-w-3xl font-display text-[2.45rem] font-medium leading-[0.98] tracking-[-0.035em] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.3)] sm:mt-4 sm:text-5xl lg:text-6xl xl:text-[4.25rem]"
+          >
             Elevate Your Space With{" "}
             <span className="relative inline-block italic text-goldlight">
               Premium
@@ -105,13 +107,13 @@ export default function Hero() {
             transition={{ duration: 0.75, delay: 0.18 }}
             className="mt-5 max-w-xl text-[14px] leading-6 text-white/80 sm:mt-6 sm:text-base sm:leading-7 lg:text-[17px] lg:leading-7"
           >
-            From design to installation, we deliver complete false ceiling
-            solutions with{" "}
+            Complete{" "}
             <span className="font-medium text-white">
-              quality materials
-            </span>
-            , skilled workmanship and a flawless finish — for homes, offices
-            and commercial spaces across Bangalore.
+              POP, Gypsum, PVC & Grid false ceiling
+            </span>{" "}
+            solutions with quality materials, skilled workmanship and clean
+            finishing for homes, offices and commercial spaces across
+            Bangalore.
           </motion.p>
 
           {/* ================= SERVICES ================= */}
@@ -137,31 +139,28 @@ export default function Hero() {
             ))}
           </motion.div>
 
-          {/* ================= BUTTONS ================= */}
+          {/* ================= BUTTON ================= */}
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.38 }}
             className="mt-7 flex flex-col gap-2.5 sm:mt-8 sm:flex-row sm:gap-3"
           >
+            <Link
+              href="/contact"
+              className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-md bg-gold px-5 py-2.5 text-sm font-semibold text-charcoal shadow-xl shadow-black/25 transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-gold/25 sm:px-6 sm:py-3"
+            >
+              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
 
-           {/* GET FREE QUOTE */}
-<Link
-  href="/contact"
-  className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-md bg-gold px-5 py-2.5 text-sm font-semibold text-charcoal shadow-xl shadow-black/25 transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-gold/25 sm:px-6 sm:py-3"
->
-  <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
+              <span className="relative">
+                Get Free Quote
+              </span>
 
-  <span className="relative">
-    Get Free Quote
-  </span>
-
-  <ArrowRight
-    size={15}
-    className="relative transition-transform duration-300 group-hover:translate-x-1"
-  />
-</Link>
-
+              <ArrowRight
+                size={15}
+                className="relative transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </Link>
           </motion.div>
 
           {/* ================= TRUST INDICATORS ================= */}
@@ -188,7 +187,6 @@ export default function Hero() {
               </div>
             ))}
           </motion.div>
-
         </motion.div>
       </div>
 
