@@ -14,11 +14,11 @@ export default function Footer() {
           {/* Right */}
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-cream/50">
               <a
-              href="tel:+919580275258"
+              href="tel:+918052050846"
               className="flex items-center gap-1.5 transition-colors hover:text-gold"
             >
               <Phone size={13} />
-              9580275258
+              8052050846
             </a>
            
             <a
