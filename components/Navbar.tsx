@@ -76,11 +76,11 @@ export default function Navbar() {
             <span className="mx-1 h-1 w-1 shrink-0 rounded-full bg-gold shadow-[0_0_10px_rgba(212,175,55,0.8)] sm:mx-1.5" />
 
             <span className="font-display text-[18px] font-semibold tracking-[-0.04em] text-gold sm:text-[23px] md:text-[25px]">
-              POP
+              
             </span>
 
             <span className="ml-1 font-display text-[18px] font-semibold tracking-[-0.04em] text-cream sm:ml-1.5 sm:text-[23px] md:text-[25px]">
-              WORKS
+              
             </span>
           </div>
 
